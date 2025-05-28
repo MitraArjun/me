@@ -63,5 +63,19 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<!-- Preloading Images -->
+			<script>
+			  document.addEventListener('DOMContentLoaded', () => {
+			    const imageUrls = [
+			      'https://github.com/MitraArjun/me/tree/main/images/pic04.jpg'
+			    ];
+			
+			    imageUrls.forEach((url) => {
+			      const img = new Image();
+			      img.src = url;
+			    });
+			  });
+			</script>
+
 	</body>
 </html>
